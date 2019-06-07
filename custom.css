@@ -170,12 +170,62 @@ margin-right: 15px;
 .mono > .box *{
   color: white;
   padding: 0 40px;
-  line-height: 2rem;
+
 }
 
 .box{
   height: 300px;
   width: 50%;
-  text-align: center;margin-top: 230px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 170px;
+}
 
+.box > h2 {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+
+.box p , a{
+  margin-top: 20px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.box a{
+  display: block;
+}
+
+/* SEZIONE CON 2 BLOCCHI 50-50 CON IMMAGINI */
+
+.app .row > .col{
+  width: 48%;
+  min-height: 600px;
+  margin: 4% 1%;
+  text-align: center;
+  position: relative;
+}
+
+.phone{
+  background: bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+
+}
+
+.phone img{
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50% );
+}
+
+
+.city{
+  background-image: url('img/city.jpg') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
