@@ -13,7 +13,6 @@
 .container {
   max-width: 80%;
   margin: auto;
-  padding: 0 20px;
 }
 .left{
   float: left;
@@ -37,6 +36,10 @@
 a{
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
+
 
 /* REGOLE HEADER - MENU       */
 .container-nav {
@@ -139,8 +142,9 @@ margin-right: 15px;
 }
 
 .prodotto .col > a{
-  display: block;x
+  display: block;
   font-size: 19px;
+  color: black;
 }
 
 /* immagine anziano full screen */
@@ -204,17 +208,19 @@ margin-right: 15px;
 .app .row > .col{
   width: 48%;
   min-height: 600px;
-  margin: 4% 1%;
   text-align: center;
   position: relative;
 }
 
-.phone{
-  background: bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
-
+.app{
+  margin-top: 60px;
 }
 
-.phone img{
+.app .phone{
+  background: bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+}
+
+.app .phone img{
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -222,10 +228,32 @@ margin-right: 15px;
   transform: translate(-50% );
 }
 
-
-.city{
+.app .city{
+  float: right;
   background-image: url('img/city.jpg') ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.text-card  h3 , p , a{
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.text-card{
+  margin-top: 50px;
+}
+.text-card h3{
+  font-size: 3rem;
+}
+
+.text-card a , p{
+  font-size: 21px;
+  font-weight: 300;
+}
+.text-card a{
+  display: inline-block;
+  padding: 0 20px;
 }
